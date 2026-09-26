@@ -67,6 +67,10 @@ These executors do not own actor state. They invoke broker callbacks after
 releasing their own queue locks; `ActorBroker` remains the policy and state
 owner.
 
+`broker.rb` is organized by concern, with `# ===` section banners and a
+reading guide above the class that maps them; start there rather than at the
+top of the file.
+
 ### `Reference`
 
 Owns one actor connection and process group:
